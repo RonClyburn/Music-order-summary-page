@@ -1,0 +1,130 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  font-family: "Red Hat Display", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-content: center;
+  background-color: var(--pale-blue);
+  font-size: 62.5%;
+  font-size: 16px;
+  color: var(--dark-blue);
+  height: 100vh;
+}
+img,
+svg {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  overflow: hidden;
+  max-width: 500px;
+}
+.card__content {
+  background-color: white;
+  display: grid;
+  padding-top: 2rem;
+}
+.card__title {
+  font-size: 1.5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  font-weight: 900;
+}
+.card__info {
+  line-height: 1.7rem;
+  color: var(--desaturated-blue);
+  padding: 0 3rem;
+}
+.flex__group {
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  margin: 1.5rem;
+}
+.music__icon {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.5rem;
+}
+.plan {
+  font-weight: 700;
+  font-size: 16px;
+  position: absolute;
+  top: 1rem;
+  left: 6rem;
+}
+.price {
+  position: absolute;
+  top: 2.5rem;
+  left: 6rem;
+  color: var(--desaturated-blue);
+}
+.change {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  color: var(--bright-blue);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.button {
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  background: var(--bright-blue);
+  color: var(--very-pale-blue);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.button:hover {
+  background: var(--dark-blue);
+  transition: ease all 0.3s;
+  color: var(--very-pale-blue);
+}
+
+.button__2 {
+  margin: 0 1rem 3rem 1rem;
+  padding: 1rem;
+  border: none;
+  color: var(--desaturated-blue);
+  background: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.button__2:hover {
+  color: var(--bright-blue);
+  transition: ease all 0.3s;
+}
+@media (min-width: 500px){
+    body {
+        background-image:url(./images/pattern-background-desktop.svg);
+    }
+}
